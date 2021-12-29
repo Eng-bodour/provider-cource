@@ -21,13 +21,13 @@ class _SelectorClassState extends State<SelectorClass> {
         ),
         body: ListView(
           children: [
-            Selector<ModelSelector, String>(
+            Selector<ModelSelector, int>(
               selector: (context, valueG1) => valueG1.txtOne,
               builder: (context, value, child) {
                 // ignore: avoid_print
-                print('Selector text1');
+                print('Selector text1 : $value');
                 return Text(
-                  value,
+                  '$value',
                   style: const TextStyle(
                       color: Colors.brown,
                       fontWeight: FontWeight.bold,
@@ -94,7 +94,7 @@ class _SelectorClassState extends State<SelectorClass> {
 }
 
 class ModelSelector extends ChangeNotifier {
-  String text1 = 'Hello';
+  int text1 = 1;
   String text2 = 'EveryOne';
 
   // for selector
@@ -102,7 +102,7 @@ class ModelSelector extends ChangeNotifier {
   get txtTow => text2;
 
   void changeText1() {
-    text1 = 'Bodour';
+    text1++;
     notifyListeners();
   }
 
