@@ -21,13 +21,13 @@ class _ProviderOfState extends State<ProviderOf> {
             centerTitle: true,
             backgroundColor: Colors.brown[300],
           ),
-          body: const WidgetAll()),
+          body: const WidgetChild()),
     );
   }
 }
 
-class WidgetAll extends StatelessWidget {
-  const WidgetAll({Key? key}) : super(key: key);
+class WidgetChild extends StatelessWidget {
+  const WidgetChild({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
