@@ -29,7 +29,7 @@ class WidgetChild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var model = Provider.of<Model>(context);
+    //  var model = Provider.of<Model>(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
