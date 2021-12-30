@@ -23,8 +23,6 @@ class _Provider8State extends State<Provider8> {
           children: [
             Consumer<Model>(
               builder: (context, value, child) {
-                //this print first value no print value when exchange value
-                print(value.text1);
                 return Text(
                   value.text1,
                   style: const TextStyle(
@@ -39,8 +37,6 @@ class _Provider8State extends State<Provider8> {
             ),
             Consumer<Model>(
               builder: (context, value, child) {
-                //this print first value no print value when exchange value
-                print(value.text1);
                 return MaterialButton(
                   color: Colors.brown,
                   onPressed: () {
